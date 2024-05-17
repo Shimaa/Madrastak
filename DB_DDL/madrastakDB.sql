@@ -395,12 +395,12 @@ CREATE  TABLE IF NOT EXISTS `madrastak`.`User` (
   INDEX `fk_User_UserProfile1` (`user_profile_id` ASC) ,
   CONSTRAINT `fk_User_UserType1`
     FOREIGN KEY (`user_type_id` )
-    REFERENCES `madrastak`.`UserType` (`id` )
+    REFERENCES `mydb`.`UserType` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_User_UserProfile1`
     FOREIGN KEY (`user_profile_id` )
-    REFERENCES `madrastak`.`UserProfile` (`id` )
+    REFERENCES `mydb`.`UserProfile` (`id` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
